@@ -1,0 +1,32 @@
+<html> 
+<head> 
+<title> КУКАРЕКУ </title> 
+<script type="text/javascript">
+
+function det() { 
+var a=(document.getElementById("a11").value); 
+var b=(document.getElementById("a22").value);
+var c=(document.getElementById("a33").value);
+document.getElementById("res").value=a*b*Math.cos(c*3.14/180); }
+</script> 
+</head> 
+
+<body bgcolor="white"> 
+<form name="form1"> 
+<center>Площадь параллелограмма по двум сторонам и острому углу
+<p> Введите a</p> <input type="text" name="a11" id="a11" value="" size="20"> 
+<br>
+<br>
+<p> Введите b</p> <input type="text" name="a22" id="a22" value="" size=20"> 
+<br>
+<br>
+<p> Введите угол</p> <input type="text" name="a33" id="a33" value="" size="20"> 
+<br>
+<br>
+<input type="button" name="button" value="Вычислить" onClick="det()"> 
+<br>
+<br>
+<input type="text" name="res" id="res" size="30"> </br> </br> </center>
+</form> 
+</body> 
+</html>
